@@ -62,13 +62,8 @@
         //filter是过滤
         return value !=nil;
     }] subscribeNext:^(NSString *str) {
-        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:str message:str preferredStyle: UIAlertControllerStyleActionSheet];
-        
-        UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"error" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
-        }];
-        
-        [alertController addAction:cancelAction];
-        [self presentViewController:alertController animated:YES completion:nil];
+        UIAlertView *alertView=[[UIAlertView alloc]initWithTitle:@"提示" message:str delegate:self cancelButtonTitle:@"confirm" otherButtonTitles:nil, nil];
+        [alertView show];
     }];
     
 }
