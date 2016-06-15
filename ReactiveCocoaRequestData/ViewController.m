@@ -11,6 +11,7 @@
 #import "ReactiveCocoa.h"
 #import "Masonry.h"
 #import "WGStoreModel.h"
+#import "DetailViewController.h"
 #define kCode1 @"MWG08A09"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property(nonatomic,strong)NSString *code1;
@@ -86,6 +87,13 @@
     cell.textLabel.text=model.shopName;
     
     return cell;
+}
+
+#pragma mrak - tableView delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    DetailViewController *detailVC=[[DetailViewController alloc]init];
+    detailVC.title=@"详情";
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (UITableView *)tableView{

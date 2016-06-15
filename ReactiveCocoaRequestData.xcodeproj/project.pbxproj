@@ -15,6 +15,8 @@
 		57F7055C1D0E83D800705D8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57F7055A1D0E83D800705D8E /* LaunchScreen.storyboard */; };
 		57F705651D0E84F100705D8E /* LoadStoreViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F705641D0E84F100705D8E /* LoadStoreViewModel.m */; };
 		57F7056A1D0E940700705D8E /* WGStoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 57F705691D0E940700705D8E /* WGStoreModel.m */; };
+		5B077D8A1D112D3D000A1205 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B077D871D112D3D000A1205 /* DetailViewController.m */; };
+		5B077D8B1D112D3D000A1205 /* DetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B077D891D112D3D000A1205 /* DetailViewModel.m */; };
 		E0A6ADC7B847F92E561BB557 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C6FE9CB4B35A6B85B79A16 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,10 @@
 		57F705641D0E84F100705D8E /* LoadStoreViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadStoreViewModel.m; sourceTree = "<group>"; };
 		57F705681D0E940700705D8E /* WGStoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WGStoreModel.h; sourceTree = "<group>"; };
 		57F705691D0E940700705D8E /* WGStoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WGStoreModel.m; sourceTree = "<group>"; };
+		5B077D861D112D3D000A1205 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		5B077D871D112D3D000A1205 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		5B077D881D112D3D000A1205 /* DetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewModel.h; sourceTree = "<group>"; };
+		5B077D891D112D3D000A1205 /* DetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewModel.m; sourceTree = "<group>"; };
 		837268A5291360D01C2E9FE4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,11 +87,10 @@
 			children = (
 				57F7054F1D0E83D800705D8E /* AppDelegate.h */,
 				57F705501D0E83D800705D8E /* AppDelegate.m */,
-				57F705521D0E83D800705D8E /* ViewController.h */,
-				57F705531D0E83D800705D8E /* ViewController.m */,
 				57F705551D0E83D800705D8E /* Main.storyboard */,
-				57F705661D0E93E500705D8E /* ViewModel */,
 				57F705671D0E93F300705D8E /* Model */,
+				5B077D8C1D112D49000A1205 /* Views */,
+				57F705661D0E93E500705D8E /* ViewModel */,
 				57F705581D0E83D800705D8E /* Assets.xcassets */,
 				57F7055A1D0E83D800705D8E /* LaunchScreen.storyboard */,
 				57F7055D1D0E83D800705D8E /* Info.plist */,
@@ -107,6 +112,8 @@
 			children = (
 				57F705631D0E84F100705D8E /* LoadStoreViewModel.h */,
 				57F705641D0E84F100705D8E /* LoadStoreViewModel.m */,
+				5B077D881D112D3D000A1205 /* DetailViewModel.h */,
+				5B077D891D112D3D000A1205 /* DetailViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -118,6 +125,17 @@
 				57F705691D0E940700705D8E /* WGStoreModel.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5B077D8C1D112D49000A1205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57F705521D0E83D800705D8E /* ViewController.h */,
+				57F705531D0E83D800705D8E /* ViewController.m */,
+				5B077D861D112D3D000A1205 /* DetailViewController.h */,
+				5B077D871D112D3D000A1205 /* DetailViewController.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		CD555558084CAAB90DCE7848 /* Pods */ = {
@@ -253,8 +271,10 @@
 				57F705651D0E84F100705D8E /* LoadStoreViewModel.m in Sources */,
 				57F705541D0E83D800705D8E /* ViewController.m in Sources */,
 				57F705511D0E83D800705D8E /* AppDelegate.m in Sources */,
+				5B077D8B1D112D3D000A1205 /* DetailViewModel.m in Sources */,
 				57F7054E1D0E83D800705D8E /* main.m in Sources */,
 				57F7056A1D0E940700705D8E /* WGStoreModel.m in Sources */,
+				5B077D8A1D112D3D000A1205 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactiveCocoaRequestData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.szwgmf.ReactiveCocoaRequestData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ReactiveCocoaRequestData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.szwgmf.ReactiveCocoaRequestData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
